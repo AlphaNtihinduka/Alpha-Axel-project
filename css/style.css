@@ -9,6 +9,9 @@
 #nav-bar{ 
     float: right;
     display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-left: 600px;
 }
 #nav-bar a{
     justify-content: space-between;
@@ -20,14 +23,17 @@
     
 }
 #header{
-    margin-bottom: 50px;
-    margin-top: 20px;
-    box-shadow: 0 4px 2px -2px black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 20px 0px;
+    background-color: grey;
 
 }
 .email-area{
     display: block;
     text-align: center;
+    margin-top: 100px;
 }
 #form{
     margin-top: 10px;
@@ -59,15 +65,22 @@ strong {
 video {
     margin-left: 30%;
     margin-top: 40px;
+    z-index: -3;
 
 }
+.parent-box{
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
 .box {
-    text-align: center;
+    
     margin-top: 30px;
     border: 2px solid black;
     width: 300px;
-    margin-left: 30%;
-
+    margin-left: 5%;
+    text-align: center;
 }
 .box div {
     padding: 15px ;
@@ -76,4 +89,12 @@ video {
     padding-top: 15px;
     padding: 10px;
     background-color:  yellow;
+    margin-bottom: 10PX;
+}
+
+@media(max-width: 600px){
+    .parent-box{
+        display: block;
+        background-color: green;
+    }
 }
